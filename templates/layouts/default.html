@@ -1,0 +1,52 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>{{ title| title | default("Lars Karbø") }}</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+		<meta name="description" content="Hei, eg lagar nettsider">
+
+
+		<link rel="stylesheet" href="/css/css.css">
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,700|Nunito:400,700" rel="stylesheet">
+
+		{# Include template-specific stylesheets by extending the css block #}
+		{% block css %}{% endblock %}
+
+		{# Add any other template-specific HEAD tags by extending the head block #}
+		{% block head %}{% endblock %}
+	</head>
+	
+	<body>
+	
+	<div id="wrapper">
+
+		{# BODY #}
+		<div id="body">
+			
+				{% block content %}{% endblock %}
+				
+
+	</div>
+
+	{# JAVASCRIPT #}
+
+
+
+			{# Add scripts that are globally required by your site here. #}
+
+			
+			
+
+			{# Include template-specific javascript files by extending the js block #}
+			{% block js %}{% endblock %}
+
+			
+	</body>
+</html>
