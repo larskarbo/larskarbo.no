@@ -5,12 +5,12 @@ var minifyCss = require('gulp-minify-css')
 
 gulp.task('sass', function() {
 	return gulp
-		.src('paper/styles.scss')
+		.src('source/sass/styles.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('dist'))
 });
 
 gulp.task('watch', function() {
 	gulp.start('sass')
-	gulp.watch('paper/*.*', ['sass']);
+	gulp.watch('source/*.*', ['sass']);
 });

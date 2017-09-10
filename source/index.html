@@ -1,45 +1,37 @@
 <html>
 	<head>
-		<title>Lars Karbo - The Karbo Paper</title>
+		<title>Lars Karbø</title>
 		<link rel="stylesheet" type="text/css" href="/styles.css" />
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="paper">
-				<div class="marg">
-					<header>
-						<div class="logo"><img src="/logo.gif" /></div>
-						★ a newspaper style resume ★ contact for opportunities
-						<div class="double-line-inv"></div>
-					</header>
+				<header>
+					<h1>Lars Karbø</h1>
+				</header>
 
-					<article>
-						{% markdown 'main-article.md' %}
-					</article>
+				<h2>★ Kontakt</h2>
+				<p>Epost <a href="mailto:mail@larskarbo.no">mail@larskarbo.no</a></p>
+				<p>Tel <a href="tel:97082750">97082750</a></p>
 
-					<article>
-						{% include 'weather-forecast.html' %}
-					</article>
+				<h2>★ Portefølje</h2>
+				{% markdown %}
 
-					<article>
-						{% markdown 'contact-info.md' %}
-					</article>
+				* [Napchart](https://napchart.com/)
+					* Web-app, React.js, database
+					* [github.com/larskarbo/napchart](https://github.com/larskarbo/napchart)
+				* [Hjorundfjord Mountain Guide](https://hjorundfjordmountainguide.no/)
+					* Komplett nettside, cms, betalingsportal
+				* [Larskarbo.com](https://larskarbo.com/)
+					* Engelsk promo-side
+				* [Sunnsnacks UB](https://sunnsnacks.larskarbo.no/)
+					* Nettside
 
-					<!-- <article>
-						<blockquote>
-							Lars is a dedicated guy with lots of talent, but sometimes he forgets his jacket at home
-							<div class="name">- future employer</div>
-						</blockquote>
-					</article> -->
+				{% endmarkdown %}
 
-					<footer>
-						{% markdown %}
-						★ mail@larskarbo.no ★ [github.com/larskarbo](https://github.com/larskarbo) ★ weather icons by [Linector](https://www.flaticon.com/authors/linector)
-						{% endmarkdown %}
-					</footer>
-				</div>
+				<footer>
+				</footer>
 			</div>
 		</div>
 	</body>

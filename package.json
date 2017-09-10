@@ -2,7 +2,7 @@
   "name": "thekarbopaper",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
     "dev": "gulp watch & NODE_ENV=development nodemon server",
     "prod": "gulp sass && NODE_ENV=production node server"
@@ -11,12 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4",
-    "gulp-inline": "^0.1.3",
     "gulp-minify-css": "^1.2.4",
-    "gulp-nunjucks": "^3.0.0",
     "gulp-uglify": "^3.0.0",
     "marked": "^0.3.6",
-    "markedejs": "^0.1.0",
     "nunjucks": "^3.0.1",
     "nunjucks-markdown": "^2.0.1"
   },
